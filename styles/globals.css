@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Montserrat Thin";
+  src: url("./Montserrat-VariableFont_wght.ttf") ;
+}
+@font-face {
+  font-family: "Quicksan Light";
+  src: url("./Quicksand-VariableFont_wght.ttf") ;
+}
+
+@layer base{
+  header{
+    @apply fixed top-0 z-50 flex w-full items-center justify-between
+    px-4 py-4 transition-all text-white lg:px-10 lg:py-6;
+  }
+}
+
+@layer components {
+  .headerLink{
+    @apply cursor-pointer text-sm font-light;
+  }
+  /* .popularProperties{
+    @apply 
+  } */
+  .tabLink{
+    @apply cursor-pointer mx-3 text-sm font-bold hover:text-[#4C4C4C] transition
+    text-[#9E9E9E];
+  }
+  .tabLinkSelected{
+    @apply cursor-pointer mx-3 text-sm font-bold text-[#9E9E9E] transition border-b-2 transition border-b-yellow-500
+  }
+  .discoverCityName{
+    @apply absolute text-xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition group-hover:-translate-y-5
+  }
+  .discoverCityPropertiyCount{
+    @apply opacity-0 absolute text-lg text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition group-hover:translate-y-1 group-hover:opacity-100
+  }
+  .yupError{
+    @apply text-xs text-red-500 ml-10
+  }
+  .activeButton{
+    @apply my-2 px-5 py-3 bg-gradient-to-r from-blue-500 to-blue-500 rounded-xl text-white
+  }
+  .passiveButton{
+    @apply my-2 px-5 py-3 cursor-pointer rounded-xl text-blue-gray-600
+  }
+
+}
