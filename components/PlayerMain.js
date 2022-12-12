@@ -2,7 +2,7 @@ import React from 'react';
 import {AudioPlayerControlSprite, AudioPlayer, TrackType} from 'react-audio-player-pro';
 
 import reactAudioPlayerProStyle from 'react-audio-player-pro/dist/style.css';
-import mp3_file from '../assets/music/berceste.mp3'
+
 
 
 // import music from '../assets/music/berceste.mp3'
@@ -10,7 +10,7 @@ import mp3_file from '../assets/music/berceste.mp3'
 const audioTrackList = [
   {
       // string - path to audio file, required
-      src: '../assets/music/berceste.mp3',
+      src: 'https://filesamples.com/samples/audio/mp3/Symphony%20No.6%20(1st%20movement).mp3',
 
       // string - 'none' | 'metadata' | 'auto', default: 'auto', optional
       preload: 'auto',

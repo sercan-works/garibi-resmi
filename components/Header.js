@@ -5,7 +5,6 @@ import { useRouter } from 'next/router';
 import logo from '../assets/img/grb.png'
 import Image from "next/image";
 import { Button, Menu, MenuHandler, MenuItem, MenuList } from "@material-tailwind/react";
-import { useDispatch, useSelector } from "react-redux";
 
 
 
