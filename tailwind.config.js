@@ -5,7 +5,21 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+        container:{
+          center: true,
+          padding: '3.7rem',
+        },
+
+        backgroundImage:{
+          'hero-bg':"url('../assets/img/background.jpg')"
+        },
+
+        fontFamily:{
+          Barlow : 'Barlow Condensed',
+          Bellefair : 'Bellefair'
+        }
+    },
   },
   plugins: [],
 }
