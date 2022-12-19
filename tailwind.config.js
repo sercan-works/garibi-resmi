@@ -18,7 +18,8 @@ module.exports = {
         fontFamily:{
           Barlow : 'Barlow Condensed',
           Bellefair : 'Bellefair'
-        }
+        },
+        
     },
   },
   plugins: [],
