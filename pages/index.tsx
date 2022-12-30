@@ -23,7 +23,7 @@ export default function Home() {
           <span className="text-[#ffffff70] font-bold mr-2">LOREM</span> IPSUM DOLOR SIT AMET</h1>
         <div className="md:flex items-center md:justify-between  pt-6 ">
           
-          <Image src={moon} layout='full' className="md:w-[36%] w-[52%]  md:mx-0 mx-auto md:py-0 py-4" alt='garibi' />
+          <Image src={moon} layout='full' className=" md:w-[36%] w-[52%]  md:mx-0 mx-auto md:py-0 py-4" alt='garibi' />
 
          
 

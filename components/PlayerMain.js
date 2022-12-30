@@ -70,7 +70,7 @@ const PlayerMain = () => {
                     isShuffleOn: false,
 
                     // boolean - is track list open, optional, default: true
-                    isTrackListOpen: true,
+                    isTrackListOpen: false,
 
                     // string: 'none' | 'all' | 'one' - repeating state, optional, default: 'none'
                     repeatingState: 'none',

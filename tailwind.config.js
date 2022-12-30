@@ -19,6 +19,10 @@ module.exports = {
           Barlow : 'Barlow Condensed',
           Bellefair : 'Bellefair'
         },
+        animation: {
+          'spin-slow': 'spin 10s linear infinite',
+        
+        }
         
     },
   },
