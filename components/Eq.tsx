@@ -4,6 +4,9 @@ import plak from "../assets/img/plak.png"
 import berceste from "../assets/music/berceste.mp3"
 import { FaStepBackward, FaStepForward } from "react-icons/fa";
 import PlayerMain from "./PlayerMain";
+
+
+
 const Eq = () => {
   const [plakMotion, setPlakMotion] = useState(true);
   const [track,setTrack] = useState()
@@ -11,9 +14,39 @@ const Eq = () => {
 
   useEffect(() => {
 
-setTrack('berceste')
+
+   
+ 
 
   }, []);
+
+
+  const playTrack = () => {
+    
+
+    const audio = document.querySelector('audio');
+    
+
+      audio?.play()
+      setPlakMotion(true)
+    
+  }
+
+  const pauseTrack = () => {
+    
+
+    const audio = document.querySelector('audio');
+    
+
+      audio?.pause()
+      setPlakMotion(false)
+    
+  }
+
+
+
+
+
 
   return (
     <>
@@ -24,11 +57,18 @@ setTrack('berceste')
 
 
         {plakMotion == true ? (
-          <div className="cursor-pointer animate-spin-slow" onClick={()=>setPlakMotion(!plakMotion)}>
+          <div className="cursor-pointer animate-spin-slow" onClick={()=> playTrack()}>
             <Image src={plak} width="75" height="75" alt="plak" />
           </div>
         ) : (
-          <div className="cursor-pointer " onClick={()=>setPlakMotion(!plakMotion)}>
+          <div className="cursor-pointer " 
+          onClick={()=>{
+            
+            pauseTrack()
+ 
+          }
+         
+          }>
             <Image src={plak} width="75" height="75" alt="plak" />
           </div>
         )}
@@ -43,17 +83,16 @@ setTrack('berceste')
 
     
       <audio className="bg-blue-500"
-        controls
-
-      
-      
+        
+        
         // src={require('./berceste.mp3')}>
-        src={berceste}>
-      
+        >
+      <source src={berceste}/>
+
     </audio>
 
 
-<PlayerMain/>
+{/* <PlayerMain/> */}
 
       <div className="absolute left-24 z-9 bottom-20 hidden">
         <div className="animate-spin-slow">
